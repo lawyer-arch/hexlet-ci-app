@@ -1,0 +1,19 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup
+        id: S01
+        run: make setup
+      
+      - name: Test
+        id: T01
+        run: tests
+
+      - name: Linter
+        id: L01
+        run: make lint
+     
