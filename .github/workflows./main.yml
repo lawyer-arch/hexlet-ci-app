@@ -5,6 +5,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - uses: hexlet-components/hello-from-hexlet-action
+
       - name: Setup
         id: S01
         run: make setup
