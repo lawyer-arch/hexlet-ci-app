@@ -10,7 +10,7 @@ jobs:
           node-version: '18.x'
           cache: 'npm'
           
-      - uses: hexlet-components/hello-from-hexlet-action
+      - uses: .github/workflows
 
       - name: Setup
         id: S01
